@@ -1,0 +1,2 @@
+Console.Write("a = ");
+a = Conert.ToInt32(Console.ReadLine());

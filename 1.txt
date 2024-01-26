@@ -1,3 +1,17 @@
-Console.Write("a = ");
-a = Conert.ToInt32(Console.ReadLine());
-result = a + b;
+static void Main(string[] args)
+{
+    double a, b, c, result;
+    string name;
+    Console.WriteLine("Программа просит пользователя ввести три вещественных числа и выводит на экран их полусумму.");
+    name = (Console.ReadLine());
+    Console.WriteLine("Здравствуйте " + name);
+    Console.Write("Введите первое вещественное число: ");
+    a = double.Parse(Console.ReadLine());
+    Console.Write("Введите второе вещественное число: ");
+    b = double.Parse(Console.ReadLine());
+    Console.Write("Введите третье вещественное число: ");
+    c = double.Parse(Console.ReadLine());
+    result = (a+b+c) / 2;
+    Console.WriteLine($"Полусумма введеных чисел a = ({a}), b = ({b}), c = ({c}), равна: {result}");
+    Console.WriteLine($"Досвидание, {name}, до скорой встречи!");
+}
